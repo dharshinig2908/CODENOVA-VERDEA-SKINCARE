@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VERDÉA | Skincare & Beauty</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="#home" class="logo">VERDÉA</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#routine">Our Routine</a>
+      <a href="#plans">Plans</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <button type="button" id="bag-button" aria-label="Open shopping bag">
+      Bag (<span id="bag-count">0</span>)
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">NATURAL BEAUTY · EVERYDAY RITUALS</p>
+
+        <h1>Let your natural beauty bloom.</h1>
+
+        <p>
+          Thoughtfully chosen skincare and beauty essentials
+          to make every day feel a little more beautiful.
+        </p>
+
+        <a href="#collection" class="primary-button">
+          Explore the Collection
+        </a>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="intro">
+      <p class="eyebrow">WELCOME TO VERDÉA</p>
+
+      <h2>Beauty that feels like you.</h2>
+
+      <p>
+        Discover everyday essentials designed to bring simplicity,
+        comfort and a little glow to your beauty routine.
+      </p>
+    </section>
+
+    <!-- PRODUCT COLLECTION -->
+    <section class="collection" id="collection">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR EVERYDAY ESSENTIALS</p>
+
+        <h2>The Collection</h2>
+
+        <p>
+          Meet the products made for your everyday beauty ritual.
+        </p>
+      </div>
+
+      <!-- PRODUCT FILTERS -->
+      <div class="product-filters" role="group" aria-label="Filter products">
+        <button
+          type="button"
+          class="filter-button active"
+          data-filter="all"
+          aria-pressed="true">
+          All Products
+        </button>
+
+        <button
+          type="button"
+          class="filter-button"
+          data-filter="skincare"
+          aria-pressed="false">
+          Skincare
+        </button>
+
+        <button
+          type="button"
+          class="filter-button"
+          data-filter="makeup"
+          aria-pressed="false">
+          Makeup
+        </button>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div class="product-grid">
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card" data-category="skincare">
+          <div class="product-image">
+            <img
+              src="verdea cleanser.jpeg"
+              alt="Botanical Cleanser"
+              loading="lazy">
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">SKINCARE</p>
+
+            <h3>Botanical Cleanser</h3>
+
+            <p class="product-price">₹599</p>
+
+            <div class="product-actions">
+              <button
+                type="button"
+                class="quick-view-button"
+                data-view="cleanser">
+                Quick View
+              </button>
+
+              <button
+                type="button"
+                class="add-button"
+                data-add="cleanser">
+                Add to Bag — ₹599
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card" data-category="skincare">
+          <div class="product-image">
+            <img
+              src="serum.jpeg"
+              alt="Dew Drop Serum"
+              loading="lazy">
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">SKINCARE</p>
+
+            <h3>Dew Drop Serum</h3>
+
+            <p class="product-price">₹899</p>
+
+            <div class="product-actions">
+              <button
+                type="button"
+                class="quick-view-button"
+                data-view="serum">
+                Quick View
+              </button>
+
+              <button
+                type="button"
+                class="add-button"
+                data-add="serum">
+                Add to Bag — ₹899
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card" data-category="skincare">
+          <div class="product-image">
+            <img
+              src="cream.jpeg"
+              alt="Cloud Cream"
+              loading="lazy">
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">SKINCARE</p>
+
+            <h3>Cloud Cream</h3>
+
+            <p class="product-price">₹749</p>
+
+            <div class="product-actions">
+              <button
+                type="button"
+                class="quick-view-button"
+                data-view="cream">
+                Quick View
+              </button>
+
+              <button
+                type="button"
+                class="add-button"
+                data-add="cream">
+                Add to Bag — ₹749
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card" data-category="makeup">
+          <div class="product-image">
+            <img
+              src="lip tint.jpeg"
+              alt="Velvet Lip Tint"
+              loading="lazy">
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">MAKEUP</p>
+
+            <h3>Velvet Lip Tint</h3>
+
+            <p class="product-price">₹499</p>
+
+            <div class="product-actions">
+              <button
+                type="button"
+                class="quick-view-button"
+                data-view="lip-tint">
+                Quick View
+              </button>
+
+              <button
+                type="button"
+                class="add-button"
+                data-add="lip-tint">
+                Add to Bag — ₹499
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 5 -->
+        <article class="product-card" data-category="makeup">
+          <div class="product-image">
+            <img
+              src="foundation.jpeg"
+              alt="Silk Foundation"
+              loading="lazy">
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">MAKEUP</p>
+
+            <h3>Silk Foundation</h3>
+
+            <p class="product-price">₹799</p>
+
+            <div class="product-actions">
+              <button
+                type="button"
+                class="quick-view-button"
+                data-view="foundation">
+                Quick View
+              </button>
+
+              <button
+                type="button"
+                class="add-button"
+                data-add="foundation">
+                Add to Bag — ₹799
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 6 -->
+        <article class="product-card" data-category="makeup">
+          <div class="product-image">
+            <img
+              src="rose blush.jpeg"
+              alt="Rose Blush"
+              loading="lazy">
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">MAKEUP</p>
+
+            <h3>Rose Blush</h3>
+
+            <p class="product-price">₹599</p>
+
+            <div class="product-actions">
+              <button
+                type="button"
+                class="quick-view-button"
+                data-view="blush">
+                Quick View
+              </button>
+
+              <button
+                type="button"
+                class="add-button"
+                data-add="blush">
+                Add to Bag — ₹599
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ROUTINE SECTION -->
+    <section class="routine" id="routine">
+      <div class="routine-content">
+        <p class="eyebrow">YOUR SKIN, YOUR RITUAL</p>
+
+        <h2>A routine that feels right for you.</h2>
+
+        <p>
+          Every skin is different. Discover a simple routine
+          that fits your everyday beauty goals.
+        </p>
+
+        <button type="button" id="routine-quiz-button">
+          Find Your Routine
+        </button>
+      </div>
+    </section>
+
+    <!-- SUBSCRIPTION PLANS -->
+    <section class="plans" id="plans">
+      <div class="section-heading">
+        <p class="eyebrow">MAKE SELF-CARE A HABIT</p>
+
+        <h2>Our Plans</h2>
+
+        <p>
+          Explore a beauty routine that works for you.
+        </p>
+      </div>
+
+      <div class="plan-grid">
+
+        <article class="plan-card">
+          <h3>Essential</h3>
+
+          <p>
+            Start with the essentials for your everyday routine.
+          </p>
+
+          <a href="#collection">Explore Products</a>
+        </article>
+
+        <article class="plan-card">
+          <h3>Glow</h3>
+
+          <p>
+            Add a little extra care to your beauty ritual.
+          </p>
+
+          <a href="#collection">Explore Products</a>
+        </article>
+
+        <article class="plan-card">
+          <h3>Complete</h3>
+
+          <p>
+            Bring your skincare and makeup favourites together.
+          </p>
+
+          <a href="#collection">Explore Products</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="section-heading">
+        <p class="eyebrow">HERE TO HELP</p>
+
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>How do I choose my skincare products?</summary>
+
+          <p>
+            Think about your skin type and your personal skincare goals.
+            Start with a simple routine and introduce new products gradually.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I place an order?</summary>
+
+          <p>
+            Add your favourite products to your bag and proceed to checkout
+            when your shopping bag is ready.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I use the products every day?</summary>
+
+          <p>
+            Follow the directions provided with each product.
+            If you have sensitive skin, test new products on a small area first.
+          </p>
+        </details>
+
+        <details>
+          <summary>How can I hear about new products?</summary>
+
+          <p>
+            Subscribe to our newsletter to receive updates and beauty news.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <p class="eyebrow">A NOTE FROM VERDÉA</p>
+
+        <h2>A little glow in your inbox.</h2>
+
+        <p>
+          Sign up for product news, beauty inspiration and updates.
+        </p>
+
+        <form id="newsletter-form">
+          <label for="newsletter-email">Email address</label>
+
+          <div class="newsletter-form-row">
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Enter your email address"
+              required>
+
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a href="#home" class="logo">VERDÉA</a>
+
+    <p>Simple rituals. Naturally radiant skin.</p>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#collection">Shop</a>
+      <a href="#routine">Our Routine</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <p class="copyright">
+      &copy; 2026 VERDÉA. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- SHOPPING BAG OVERLAY -->
+  <div id="bag-overlay" class="overlay" hidden></div>
+
+  <!-- SHOPPING BAG DRAWER -->
+  <aside
+    id="bag-drawer"
+    class="bag-drawer"
+    aria-label="Shopping bag"
+    aria-hidden="true">
+
+    <div class="bag-header">
+      <h2>Your Bag</h2>
+
+      <button
+        type="button"
+        id="close-bag"
+        aria-label="Close shopping bag">
+        &times;
+      </button>
+    </div>
+
+    <div id="bag-items">
+      <p class="empty-bag">Your bag is empty.</p>
+    </div>
+
+    <div class="bag-summary">
+      <p>
+        Subtotal:
+        <span id="bag-total">₹0</span>
+      </p>
+
+      <button type="button" id="checkout-button">
+        Proceed to Checkout
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- QUICK VIEW MODAL -->
+  <div id="quick-view-modal" class="modal-overlay" hidden>
+    <div
+      class="modal-content"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="quick-view-title">
+
+      <button
+        type="button"
+        id="close-quick-view"
+        aria-label="Close quick view">
+        &times;
+      </button>
+
+      <img
+        id="quick-view-image"
+        src="verdea cleanser.jpeg"
+        alt="Botanical Cleanser">
+
+      <p class="eyebrow">VERDÉA BEAUTY</p>
+
+      <h2 id="quick-view-title">Botanical Cleanser</h2>
+
+      <p id="quick-view-price">₹599</p>
+
+      <p id="quick-view-description">
+        Discover an everyday beauty essential from VERDÉA.
+      </p>
+
+      <button
+        type="button"
+        id="quick-view-add"
+        class="add-button"
+        data-add="cleanser">
+        Add to Bag — ₹599
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ROUTINE QUIZ MODAL -->
+  <div id="routine-quiz-modal" class="modal-overlay" hidden>
+    <div
+      class="modal-content"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="quiz-title">
+
+      <button
+        type="button"
+        id="close-routine-quiz"
+        aria-label="Close routine quiz">
+        &times;
+      </button>
+
+      <p class="eyebrow">YOUR PERSONAL BEAUTY RITUAL</p>
+
+      <h2 id="quiz-title">Find Your Routine</h2>
+
+      <form id="routine-quiz-form">
+
+        <fieldset>
+          <legend>What is your skin type?</legend>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-type"
+              value="dry"
+              required>
+            Dry
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-type"
+              value="oily">
+            Oily
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-type"
+              value="combination">
+            Combination
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-type"
+              value="normal">
+            Normal
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-type"
+              value="sensitive">
+            Sensitive
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your main beauty goal?</legend>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-goal"
+              value="hydration"
+              required>
+            Hydration
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-goal"
+              value="glow">
+            A natural glow
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="skin-goal"
+              value="simple">
+            A simple daily routine
+          </label>
+        </fieldset>
+
+        <button type="submit">Find My Routine</button>
+
+      </form>
+
+      <div
+        id="routine-quiz-result"
+        aria-live="polite">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite">
+  </div>
+
+</body>
+</html>
